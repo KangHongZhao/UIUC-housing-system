@@ -13,7 +13,7 @@ export function App() {
             setData(res.data.data);
             const userToken = localStorage.getItem('userToken');
             console.log(userToken)
-            axios.get('http://localhost:4000/api/favorites', {
+            axios.get('https://backen.herokuapp.com/api/favorites', {
                 headers: {
                     'Authorization': 'Bearer ' + userToken,
                     "Content-Type": "application/json",
@@ -39,7 +39,7 @@ export function App() {
     const save = async () => {
         const userToken = localStorage.getItem('userToken');
         if (buttonText === 'save') {
-            axios.post('http://localhost:4000/api/favorites', {
+            axios.post('https://backen.herokuapp.com/api/favorites', {
                 "apartmentId": id,
                 'add': true,
             },{
@@ -54,7 +54,7 @@ export function App() {
             )
             setButtonText('unsave')
         } else {
-            axios.post('http://localhost:4000/api/favorites', {
+            axios.post('https://backen.herokuapp.com/api/favorites', {
                 "apartmentId": id,
                 "add": false,
             },{
