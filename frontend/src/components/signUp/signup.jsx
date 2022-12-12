@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import './signup.css';
 
 const client = axios.create({
-	baseURL: "http://localhost:4000/api/users"
+	baseURL: "https://backen.herokuapp.com/api/users"
   })
 const Signup = () => {
 	const [data, setData] = useState({
