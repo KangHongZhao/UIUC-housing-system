@@ -3,9 +3,8 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import './login.css';
 import image1 from './label.jpg';
-
 const client = axios.create({
-	baseURL: "http://localhost:4000/api/auth"
+	baseURL: "https://backen.herokuapp.com/api/auth"
   })
   
 const Login = () => {
