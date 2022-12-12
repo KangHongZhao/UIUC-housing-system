@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:4000';
+const URL = 'https://backen.herokuapp.com';
 
 export function getApartment(opt = {}) {
     return axios.get(`${URL}/api/apartments`, {
