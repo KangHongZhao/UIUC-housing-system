@@ -123,7 +123,7 @@ function App() {
     const search = async () => {
         const textb = document.getElementById("searchbar").value;
 
-        const result = await Axios.get('http://localhost:4000/api/apartments', {
+        const result = await Axios.get('https://backen.herokuapp.com/api/apartments', {
         }).catch(function (error) {
             console.log(error);
             return;
