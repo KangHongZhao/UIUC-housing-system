@@ -16,7 +16,7 @@ function Favorite() {
 	const config = {
 		headers: { Authorization: `Bearer ${token}` }
 	};
-    await Axios.get("http://localhost:4000/api/favorites", config).then(
+    await Axios.get("https://backen.herokuapp.com/api/favorites", config).then(
       res => {
 		const temp = [];
 		let i = 1;
